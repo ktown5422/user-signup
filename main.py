@@ -8,15 +8,6 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 
 
-
-@app.route("/welcome-page")
-def welcome_page():
-
-    
-    return render_template('welcome-page.html')
-
-
-
 @app.route("/", methods=['POST'])
 def index_validation():
 
